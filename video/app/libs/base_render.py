@@ -10,6 +10,7 @@ def render_to_response(request, templates, data=None):
     context_instance = RequestContext(request)
     path = settings.TEMPLATES[0]['DIRS'][0]
 
+    print('模板路径：{}'.format(path))
     lookup = TemplateLookup(
         directories=[path],
         output_encoding='utf-8',
@@ -29,6 +30,7 @@ def render_to_response(request, templates, data=None):
     for d in context_instance:
         result.update(d)
 
+    result['request'] = request
     result['csrf_token'] = '<input type="hidden" name="csrfmiddlewaretoken" ' \
                            'value={0}>'.format(request.META['CSRF_COOKIE'])
 
