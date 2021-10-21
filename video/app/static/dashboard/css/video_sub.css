@@ -1,0 +1,38 @@
+input {
+    width: 50% !important;
+    display: inline-block !important ;
+}
+select {
+    width: 50% !important;
+    display: inline-block !important ;
+}
+
+.add-url {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+#add-url-btn {
+    width: 50px !important;
+}
+#add-star-btn {
+    width: 50px !important;
+}
+
+p {
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.info {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-size: 16px;
+}

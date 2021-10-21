@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_video',
         'USER': 'root',
-        'PASSWORD': '123',
+        'PASSWORD': 'js*168',
         'HOST': '127.0.0.1',
         'PORT': 3306
     }
@@ -130,3 +130,10 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), )
+
+
+# 七牛
+QINIU_AK = 'WSke97ZMsIV4MZUfSnnGcONyrwJ7uOJ644HbQqi5'
+QINIU_SK = 'CFRepw9dGv76AdqMjFX4h3EFK_xh2TLFqF8Sw9sE'
+QINIU_VIDEO = 'video7760'
+QINIU_VIDEO_URL = 'r16e8t5kj.hn-bkt.clouddn.com'

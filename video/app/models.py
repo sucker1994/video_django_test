@@ -1,3 +1,8 @@
-from django.db import models
+# coding:utf-8
 
-# Create your models here.
+# from django.db import models
+from .model.auth import ClientUser
+from .model.video import Video, VideoStar, VideoSub
+
+
+
